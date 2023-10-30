@@ -20,7 +20,7 @@ const MainPage = () => {
                     <div className='w-6/12 h-full right'> reference</div>
                 </div>
             </section>
-            <section className="w-full h-screen flex-grow-1 bg-yellow-50 text-gray-600 mt-100">
+            <section className="w-full h-screen flex-grow-1 text-gray-600 mt-100 first-section">
                 experience section
             </section>
             <section className="w-full h-screen flex-grow-1">
