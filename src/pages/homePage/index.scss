@@ -2,8 +2,6 @@
   .top-section {
     translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75);
     --background-opacity: calc(100% - 1% * min(var(--scroll), 30) * 100 / 30);
-    .left {
-    }
     .right {
       background-color: rgb(190, 190, 190, var(--background-opacity));
     }
