@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import './index.scss';
+import Header from '../../components/header/header';
 const MainPage = () => {
     const setScrollValue = () => {
         const htmlElement = document.documentElement;
@@ -14,6 +15,7 @@ const MainPage = () => {
     }, [])
     return (
         <div className="w-full flex flex-col sections-container ">
+            <Header />
             <section className="w-full h-screen flex-grow-1 top-0 top-section sticky">
                 <div className="w-full h-full flex flex-row items-center">
                     <div className='w-6/12 h-full left'> About me section </div>
