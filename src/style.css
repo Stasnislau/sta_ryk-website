@@ -15,9 +15,10 @@
   width: 100%;
 }
 
-.App{
+.App {
   display: block;
   width: 100%;
+  padding: 0 5dvh;
 }
 
 body {
@@ -27,4 +28,6 @@ body {
   min-height: 100vh;
   padding: 0;
   max-width: 100%;
+  color: #DFE2E7;
+  background-color: #12121A;
 }

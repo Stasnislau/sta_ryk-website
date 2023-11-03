@@ -15,14 +15,16 @@ const MainPage = () => {
     }, [])
     return (
         <div className="w-full flex flex-col sections-container ">
-            <Header />
+            <div className="w-full h-20 flex flex-row">
+                <Header />
+            </div>
             <section className="w-full h-screen flex-grow-1 top-0 top-section sticky">
                 <div className="w-full h-full flex flex-row items-center">
-                    <div className='w-6/12 h-full left'> About me section </div>
+                    <div className='w-6/12 h-full left'/>
                     <div className='w-6/12 h-full right'> reference</div>
                 </div>
             </section>
-            <section className="w-full h-screen flex-grow-1 text-gray-600 mt-100 first-section">
+            <section className="w-full h-screen flex-grow-1 mt-100 first-section">
                 experience section
             </section>
             <section className="w-full h-screen flex-grow-1">
