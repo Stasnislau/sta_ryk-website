@@ -14,7 +14,15 @@
   -webkit-text-size-adjust: 100%;
   width: 100%;
 }
-
+@layer base{
+  .App {
+    font-family: sans-serif;
+  }
+  body {
+    background-color: theme("colors.background");
+    color: theme("colors.text");
+  }
+}
 .App {
   display: block;
   width: 100%;
@@ -28,6 +36,5 @@ body {
   min-height: 100vh;
   padding: 0;
   max-width: 100%;
-  color: #DFE2E7;
-  background-color: #12121A;
+
 }
