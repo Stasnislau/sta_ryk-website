@@ -18,7 +18,7 @@ const MainPage = () => {
     }, [])
     return (
         <div className="w-full flex flex-col sections-container ">
-            <div className="w-full h-20 flex flex-row">
+            <div className="w-full h-20 flex flex-row ">
                 <Header 
                     aboutRef={aboutRef}
                     experienceRef={experienceRef}
@@ -28,8 +28,8 @@ const MainPage = () => {
             </div>
             <section className="w-full h-screen flex-grow-1 top-0 top-section sticky" ref={aboutRef}>
                 <div className="w-full h-full flex flex-row items-center">
-                    <div className='w-6/12 h-full left'/>
-                    <div className='w-6/12 h-full right'> reference</div>
+                    <div className='tablet:w-6/12 h-full left mobile:w-0'/>
+                    <div className='tablet:w-6/12 h-full mobile:w-full right'> reference</div>
                 </div>
             </section>
             <section className="w-full h-screen flex-grow-1 mt-100 first-section" ref={experienceRef}>
