@@ -14,10 +14,29 @@
   -webkit-text-size-adjust: 100%;
   width: 100%;
 }
-@layer base{
+@layer base {
   .App {
     font-family: sans-serif;
+    box-sizing: border-box;
   }
+  @screen mobile{
+    .App {
+      margin: 0;
+    }
+  }
+  
+  @screen tablet{
+    .App {
+      margin: 0;
+    }
+  }
+  @screen laptop{
+    .App {
+      margin: 0 8dvw;
+    }
+  }
+
+
   body {
     background-color: theme("colors.background");
     color: theme("colors.text");
@@ -26,7 +45,6 @@
 .App {
   display: block;
   width: 100%;
-  padding: 0 8dvh;
 }
 
 body {
@@ -36,5 +54,18 @@ body {
   min-height: 100vh;
   padding: 0;
   max-width: 100%;
+}
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0.25rem;
 }
