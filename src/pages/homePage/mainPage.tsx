@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import './index.scss';
 import Header from '../../components/header/header';
+import AboutSection from '../../components/sections/about/about';
 const MainPage = () => {
     const aboutRef = useRef<HTMLDivElement>(null);
     const experienceRef = useRef<HTMLDivElement>(null);
@@ -19,7 +20,7 @@ const MainPage = () => {
     return (
         <div className="w-full flex flex-col sections-container ">
             <div className="w-full h-20 flex flex-row ">
-                <Header 
+                <Header
                     aboutRef={aboutRef}
                     experienceRef={experienceRef}
                     projectsRef={projectsRef}
@@ -28,8 +29,8 @@ const MainPage = () => {
             </div>
             <section className="w-full h-screen flex-grow-1 top-0 top-section sticky" ref={aboutRef}>
                 <div className="w-full h-full flex flex-row items-center">
-                    <div className='tablet:w-6/12 h-full left mobile:w-0'/>
-                    <div className='tablet:w-6/12 h-full mobile:w-full right'> reference</div>
+                    <div className='tablet:w-6/12 h-full left mobile:w-0' />
+                    <div className='tablet:w-6/12 h-full mobile:w-full right'><AboutSection /></div>
                 </div>
             </section>
             <section className="w-full h-screen flex-grow-1 mt-100 first-section" ref={experienceRef}>

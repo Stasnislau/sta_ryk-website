@@ -68,3 +68,28 @@ body {
   background: #888;
   border-radius: 0.25rem;
 }
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 0.5;
+  }
+  20%, 80% {
+    opacity: 0.75;
+  }
+  30%, 70% {
+    opacity: 0.85;
+  }
+  40%, 60% {
+    opacity: 0.95;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.in-progress {
+  animation: fadeInOut 2s infinite;
+}
