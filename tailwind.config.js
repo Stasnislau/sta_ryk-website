@@ -12,6 +12,7 @@ export default {
       colors: {
         text: "#DFE2E7",
         background: "#12121a",
+        pwColor: "#6fc49b",
       },
     },
   },
