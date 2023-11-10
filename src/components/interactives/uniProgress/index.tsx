@@ -25,8 +25,9 @@ const UniProgress = () => {
     }, [progress]);
 
     return (
-        <div className="flex flex-col">
-            <p className="pt-6 text-lg text-pwColor ">
+        <div className="flex flex-col mt-2 p-2 ">
+
+            <p className="text-lg text-pwColor text-center">
                 Warsaw University of Technology
             </p>
             <div className="flex flex-row justify-between">
@@ -36,7 +37,7 @@ const UniProgress = () => {
                 <p className="in-progress text-sm">In Progress</p>
             </div>
             <div className="flex flex-col">
-                <p className="pt-6">
+                <p className="pt-2">
                     Computer Science (BSc)
                 </p>
             </div>
