@@ -28,9 +28,9 @@ const MainPage = () => {
                 />
             </div>
             <section className="w-full h-screen top-0 top-section sticky" ref={aboutRef}>
-                <div className="w-full h-full flex flex-row items-center flex-grow-1">
+                <div className="w-full h-full flex flex-row items-center grow">
                     <div className='tablet:w-6/12 h-full left mobile:w-0' />
-                    <div className='tablet:w-6/12 h-full mobile:w-full right'><AboutSection /></div>
+                    <div className='tablet:w-6/12 h-full mobile:w-full right flex grow'><AboutSection /></div>
                 </div>
             </section>
             <section className="w-full h-screen flex-grow-1 mt-100 first-section" ref={experienceRef}>
