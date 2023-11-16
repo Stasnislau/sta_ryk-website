@@ -1,11 +1,9 @@
 import {
-  textVariantType,
-  fadeInType,
   zoomInType,
   slideInType,
   staggerContainerType,
 } from "../types/utils";
-export const textVariant = ({ delay }: textVariantType) => {
+export const textVariant = (delay?: number) => {
   return {
     hidden: {
       y: -50,
@@ -23,7 +21,12 @@ export const textVariant = ({ delay }: textVariantType) => {
   };
 };
 
-export const fadeIn = ({ direction, type, delay, duration }: fadeInType) => {
+export const fadeIn = (
+  direction: "up" | "down" | "left" | "right" |"",
+  type: string,
+  delay: number,
+  duration: number
+) => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
