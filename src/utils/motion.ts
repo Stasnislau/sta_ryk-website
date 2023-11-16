@@ -1,8 +1,5 @@
-import {
-  zoomInType,
-  slideInType,
-  staggerContainerType,
-} from "../types/utils";
+import { zoomInType, slideInType, staggerContainerType } from "../types/utils";
+import React from "react";
 export const textVariant = (delay?: number) => {
   return {
     hidden: {
@@ -22,7 +19,7 @@ export const textVariant = (delay?: number) => {
 };
 
 export const fadeIn = (
-  direction: "up" | "down" | "left" | "right" |"",
+  direction: "up" | "down" | "left" | "right" | "",
   type: string,
   delay: number,
   duration: number
@@ -85,10 +82,7 @@ export const slideIn = ({ direction, type, delay, duration }: slideInType) => {
   };
 };
 
-export const staggerContainer = ({
-  staggerChildren,
-  delayChildren,
-}: staggerContainerType) => {
+export const staggerContainer = (staggerChildren?: number, delayChildren?: number) => {
   return {
     hidden: {},
     show: {

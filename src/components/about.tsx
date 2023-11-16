@@ -1,4 +1,3 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -6,6 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 interface ServiceCardProps {
     title: string;
@@ -53,4 +53,9 @@ const About = () => {
     );
 }
 
-export default About;
+const AboutSection = SectionWrapper({
+    Component: About,
+    idName: "about"
+});
+
+export default AboutSection;
