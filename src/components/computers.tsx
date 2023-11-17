@@ -20,7 +20,7 @@ const Computers = ({ isMobile }: computersProps) => {
             <pointLight intensity={1} />
             <spotLight
                 position={[-20, 50, 0]}
-                angle={0.12}
+                angle={Math.PI * 3 / 4}
                 penumbra={1}
                 intensity={10000}
                 castShadow
@@ -28,7 +28,7 @@ const Computers = ({ isMobile }: computersProps) => {
             />
             <spotLight
                 position={[20, 35, 0]}
-                angle={0.12}
+                angle={Math.PI * 3 / 4}
                 penumbra={1}
                 intensity={10000}
                 castShadow
