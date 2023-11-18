@@ -1,11 +1,10 @@
 import Navbar from "./navbar";
 import Hero from "./hero";
-import about from "./about";
+import About from "./about";
 import Experience from "./experience";
-import tech from "./tech";
+import Tech from "./tech";
 import Works from "./works";
 import Contact from "./contact";
-import StarsCanvas from "./starsCanvas";
 import ComputerCanvas from "./computers";
 
-export { Navbar, Hero, about, Experience, tech, Works, Contact, StarsCanvas, ComputerCanvas };
+export { Navbar, Hero, About, Experience, Tech, Works, Contact,  ComputerCanvas };
