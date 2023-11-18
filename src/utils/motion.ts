@@ -63,7 +63,12 @@ export const zoomIn = ({ delay, duration }: zoomInType) => {
   };
 };
 
-export const slideIn = ({ direction, type, delay, duration }: slideInType) => {
+export const slideIn = (
+  direction: "up" | "down" | "left" | "right" | "",
+  type: string,
+  delay: number,
+  duration: number
+) => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -82,7 +87,10 @@ export const slideIn = ({ direction, type, delay, duration }: slideInType) => {
   };
 };
 
-export const staggerContainer = (staggerChildren?: number, delayChildren?: number) => {
+export const staggerContainer = (
+  staggerChildren?: number,
+  delayChildren?: number
+) => {
   return {
     hidden: {},
     show: {
