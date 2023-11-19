@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
@@ -6,8 +6,6 @@ import { SectionWrapper } from '../hoc'
 import { EarthCanvas } from './canvas'
 import { slideIn } from '../utils/motion'
 import React from 'react'
-
-
 
 const Contact = () => {
     const [form, setForm] = useState({
@@ -18,24 +16,38 @@ const Contact = () => {
     const formRef = React.useRef<HTMLFormElement>(null);
     const [loading, setLoading] = useState(false);
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setForm({ ...form, [e.target.name]: e.target.value })
+        const { name, value } = e.target
+        setForm(prev => ({ ...prev, [name]: value }))
     }
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setLoading(true)
-        // emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID!, process.env.REACT_APP_EMAILJS_TEMPLATE_ID!, formRef.current!, process.env.REACT_APP_EMAILJS_USER_ID!)
-        //     .then((result) => {
-        //         console.log(result.text)
-        //         setLoading(false)
-        //         setForm({
-        //             name: "",
-        //             email: "",
-        //             message: "",
-        //         })
-        //     }, (error) => {
-        //         console.log(error.text)
-        //         setLoading(false)
-        //     })
+        emailjs.send(import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
+            {
+                from_name: form.name,
+                to_name: 'Stanislau',
+                from_email: form.email,
+                to_email: "stanislau.ryzh@gmail.com",
+                message: form.message,
+            },
+            import.meta.env.VITE_PUBLIC_KEY)
+            .then(
+                () => {
+                    setLoading(false)
+                    alert('Thank you for your message. I will get back to you soon.')
+                    setForm({
+                        name: "",
+                        email: "",
+                        message: "",
+                    })
+                }, (error) => {
+                    setLoading(false)
+                    console.log(error)
+                    alert('Something went wrong.')
+                }
+            )
+
     }
     return (
         <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
