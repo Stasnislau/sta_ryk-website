@@ -1,4 +1,4 @@
-import { zoomInType, slideInType, staggerContainerType } from "../types/utils";
+import { zoomInType } from "../types/utils";
 import React from "react";
 export const textVariant = (delay?: number) => {
   return {
@@ -44,7 +44,7 @@ export const fadeIn = (
   };
 };
 
-export const zoomIn = ({ delay, duration }: zoomInType) => {
+export const zoomIn = (delay: number, duration: number) => {
   return {
     hidden: {
       scale: 0,
@@ -87,7 +87,7 @@ export const slideIn = (
   };
 };
 
-export const staggerContainer = (
+export const staggerContainer = ( 
   staggerChildren?: number,
   delayChildren?: number
 ) => {
