@@ -6,5 +6,6 @@ import Skills from "./skills";
 import Works from "./works";
 import Contact from "./contact";
 import ComputerCanvas from "./computers";
+import Languages from "./languages";
 
-export { Navbar, Hero, About, Experience, Skills, Works, Contact,  ComputerCanvas };
+export { Navbar, Hero, About, Experience, Skills, Works, Contact,  ComputerCanvas, Languages };
