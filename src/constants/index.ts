@@ -181,8 +181,8 @@ const experiences = [
     date: "Aug 2022 - Nov 2022",
     points: [
       "Developing and maintaining web applications using React.ts.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Integrating Server and Client parts of the applications.",
+      "Working in SCRUM methodology alongside other developers, designers, and product managers.",
     ],
   },
   {
@@ -193,9 +193,8 @@ const experiences = [
     date: "Mar 2023 - Dec 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Working with multimedia content, APIs, and third-party libraries.",
     ],
   },
 ];
