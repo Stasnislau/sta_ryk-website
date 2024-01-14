@@ -1,5 +1,3 @@
-import { zoomInType } from "../types/utils";
-import React from "react";
 export const textVariant = (delay?: number) => {
   return {
     hidden: {
