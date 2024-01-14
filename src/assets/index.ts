@@ -36,9 +36,11 @@ import codete from "./company/codete.png";
 import freelance from "./company/freelance.png";
 
 import chat from "./projects/chat.png";
+import frenchLearner from "./projects/frenchLearner.png";
 import moodCertificate from "./projects/moodCertificate.png";
 import shop from "./projects/shop.png";
 import vejshnoria from "./projects/vejshnoria.png";
+
 
 export {
   logo,
@@ -72,6 +74,7 @@ export {
   freelance,
   codete,
   chat,
+  frenchLearner,
   moodCertificate,
   shop,
   vejshnoria,

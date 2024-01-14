@@ -28,6 +28,7 @@ import {
   nextjs,
   postgres,
   prisma,
+  frenchLearner,
 } from "../assets";
 
 export const navLinks = [
@@ -203,7 +204,7 @@ const projects = [
   {
     name: "Chat App",
     description:
-      "Web application that enables the user to chat with other users. User may create a room and invite other users to join the room.",
+      "Web application that enables the user to chat with other users. User may create a room and invite other users to join their rooms or use private messages.",
     tags: [
       {
         name: "react",
@@ -220,6 +221,27 @@ const projects = [
     ],
     image: chat,
     source_code_link: "https://github.com/Stasnislau/Chat",
+  },
+  {
+    name: "French Learner",
+    description: "Web application that enables the user to learn French words. The learning process is done via interactive cards and engaging atmosphere.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: frenchLearner,
+    source_code_link: "https://github.com/Stasnislau/words-learner",
+    live_link: "https://french-learner.netlify.app/",
   },
   {
     name: "Shop website",
@@ -284,7 +306,6 @@ const projects = [
     ],
     image: vejshnoria,
     source_code_link: "https://github.com/Stasnislau/Embassy-of-Veyshnoria",
-    live_link: "https://embassy-of-veyshnoria.netlify.app/",
   },
 ];
 
