@@ -29,6 +29,7 @@ import {
   postgres,
   prisma,
   frenchLearner,
+  exchanger,
 } from "../assets";
 
 export const navLinks = [
@@ -201,16 +202,37 @@ const experiences = [
 
 const projects = [
   {
+    name: "Exchanger",
+    description:
+      "Web application that enables the user to exchange currencies. User may select the currency and the amount of money to exchange and get the result.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: exchanger,
+    source_code_link: "https://github.com/Stasnislau/exchanger",
+  },
+  {
     name: "Chat App",
     description:
       "Web application that enables the user to chat with other users. User may create a room and invite other users to join their rooms or use private messages.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
@@ -248,11 +270,11 @@ const projects = [
       "Web application that enables the user to buy and sell products online. User may give all the information about the product and can also view the products sold by other users.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "postgresql",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
