@@ -28,6 +28,8 @@ import nestjs from "./tech/nestjs.svg";
 import nextjs from "./tech/nextjs.svg";
 import postgres from "./tech/postgres.svg";
 import prisma from "./tech/prisma.svg";
+import csharp from "./tech/csharp.svg";
+import asp from "./tech/asp.svg";
 
 import codete from "./company/codete.png";
 import freelance from "./company/freelance.png";
@@ -68,6 +70,8 @@ export {
   nextjs,
   postgres,
   prisma,
+  csharp,
+  asp,
   freelance,
   codete,
   chat,

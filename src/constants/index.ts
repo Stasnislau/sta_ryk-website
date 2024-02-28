@@ -14,6 +14,8 @@ import {
   mongodb,
   git,
   docker,
+  asp,
+  csharp,
   codete,
   freelance,
   chat,
@@ -68,12 +70,12 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "C#",
+    icon: csharp,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "ASP.NET",
+    icon: asp,
   },
   {
     name: "JavaScript",
@@ -84,28 +86,54 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "NestJS",
+    icon: nestjs,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "NextJS",
+    icon: nextjs,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "Three JS",
     icon: threejs,
+  },
+
+  {
+    name: "Framer",
+    icon: framer,
+  },
+  {
+    name: "Material UI",
+    icon: MUI,
+  },
+  {
+    name: "MobX",
+    icon: mobx,
+  },
+  {
+    name: "Redux",
+    icon: redux,
   },
   {
     name: "Git",
@@ -116,28 +144,12 @@ const technologies = [
     icon: docker,
   },
   {
-    name: "Framer",
-    icon: framer,
-  },
-  {
-    name: "MobX",
-    icon: mobx,
-  },
-  {
-    name: "Material UI",
-    icon: MUI,
-  },
-  {
-    name: "NestJS",
-    icon: nestjs,
-  },
-  {
-    name: "NextJS",
-    icon: nextjs,
-  },
-  {
     name: "PostgreSQL",
     icon: postgres,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "Prisma",
@@ -181,9 +193,9 @@ const experiences = [
     iconBg: "#11263b",
     date: "Aug 2022 - Nov 2022",
     points: [
-      "Developing and maintaining web applications using React.ts.",
-      "Integrating Server and Client parts of the applications.",
-      "Working in SCRUM methodology alongside other developers, designers, and product managers.",
+      "Developed 70% of user flow pages for a dynamic web application using React and SCSS, significantly improving UX and functionality.",
+      "Integrated server and client-side components, ensuring cohesive operation within the application's architecture.",
+      "Employed Scrum methodology to collaborate effectively with developers all over the glove, incorporating feedback to refine web interfaces and maintain high code quality",
     ],
   },
   {
@@ -193,9 +205,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Mar 2023 - Dec 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Working with multimedia content, APIs, and third-party libraries.",
+      "Developed and maintained the client-side of a medical AI helper application with React, focusing on UI/UX enhancement and interactivity.",
+      "Implemented responsive designs ensuring cross-browser compatibility with extensive work on media processing features.",
+      "Worked closely with the project lead on custom API integrations and utilized third-party libraries,.",
     ],
   },
 ];
@@ -245,7 +257,8 @@ const projects = [
   },
   {
     name: "French Learner",
-    description: "Web application that enables the user to learn French words. The learning process is done via interactive cards and engaging atmosphere.",
+    description:
+      "Web application that enables the user to learn French words. The learning process is done via interactive cards and engaging atmosphere.",
     tags: [
       {
         name: "React",
